@@ -26,7 +26,7 @@ yum update  -y &>>$LOG
 VALIDATE $? "Updating packages"
 
 yum install docker -y &>>$LOG
-VALIDATE $? "Installing Docker"
+VALIDATE $? "Installling Docker"
 
 service docker start &>>$LOG
 VALIDATE $? "Starting Docker"

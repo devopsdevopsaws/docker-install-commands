@@ -25,7 +25,7 @@ VALIDATE(){
 yum update  -y &>>$LOG
 VALIDATE $? "Updating packages"
 
-amazon-linux-extras install docker -y &>>$LOG
+yum install docker -y &>>$LOG
 VALIDATE $? "Installing Docker"
 
 service docker start &>>$LOG
